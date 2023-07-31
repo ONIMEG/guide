@@ -7,7 +7,7 @@
  * Colors
  * -------------------------------------------------------------------------- */
 /*#3e4357*/
- :root {
+:root {
   --vp-c-brand: #874566;
   --vp-c-brand-light: #884e6c;
   --vp-c-brand-lighter: #885f74;
@@ -15,6 +15,7 @@
   --vp-c-brand-dark: #8c2659;
   --vp-c-brand-darker: #880046;
   --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
+  --vp-code-font-size: 0.675rem;
 }
 
 /**
@@ -88,4 +89,3 @@
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand) !important;
 }
-
