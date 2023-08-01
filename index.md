@@ -5,14 +5,14 @@ layout: home
 hero:
   name: "缺氧模组制作"
   text: "入门指北"
-  tagline: 会不会就看你的悟性了
+  # tagline: 会不会就看你的悟性了
   image:
     src: /logo.png
     alt: GuideLogo
   actions:
     - theme: brand
       text: 开始
-      link: /markdown-examples
+      link: /get-start/index.md
 
 features:
   - icon: "?"
@@ -23,4 +23,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
