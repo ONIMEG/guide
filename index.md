@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "缺氧模组制作"
   text: "入门指北"
-  # tagline: 会不会就看你的悟性了
+  tagline: 做模组，不求人
   image:
     src: /logo.png
     alt: GuideLogo

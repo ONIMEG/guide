@@ -138,6 +138,8 @@ public class Db_Initialize_Patch {
 
 想要我们编写的代码在游戏内执行，就需要对编写好的代码进行编译：右键你的项目（这里是 `ClassLibrary1`），点击 `生成` 如果没有更改设置，那么生成后的 dll 文件在你的项目文件夹下 `./bin/Debug` 文件夹中，有一个同名的 dll 文件，（这里是 `ClassLibrary1.dll`）。记住这个文件，后面的步骤需要使用。
 
+如果我们想正式发布这个模组，建议将 Visual Studio 上方的解决方案配置 `Debug` 更改成 `Release`。
+
 ### 模组信息
 
 缺氧的模组信息，是保存在 `mod.yaml` 和 `mod_info.yaml` 中的，这两个文件需要通过 `YAML` 的格式来编写，对于缺氧的模组信息，就非常简单。

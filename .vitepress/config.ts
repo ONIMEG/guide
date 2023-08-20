@@ -4,11 +4,17 @@ const navConfig: DefaultTheme.NavItem[] = [{ text: "主页", link: "/" }];
 
 const sidebarConfig: DefaultTheme.SidebarItem[] = [
   {
-    text: "指北",
+    text: "快速开始",
     items: [
-      { text: "介绍", link: "/get-start/index.md" },
+      { text: "注意", link: "/get-start/index.md" },
       { text: "速通", link: "/get-start/quick.md" },
     ],
+  },
+  {
+    text: "例子",
+    items: [
+      {text:"模组翻译", link: "/example/translation.md"}
+    ]
   },
   {
     text: "源码注释",
