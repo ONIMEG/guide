@@ -13,8 +13,9 @@ const sidebarConfig: DefaultTheme.SidebarItem[] = [
   {
     text: "例子",
     items: [
-      {text:"模组翻译", link: "/example/translation.md"}
-    ]
+      { text: "模组翻译", link: "/example/translation.md" },
+      { text: "建筑相关", link: "/example/buildings.md" },
+    ],
   },
   {
     text: "源码注释",
