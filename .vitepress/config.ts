@@ -1,38 +1,20 @@
 import { DefaultTheme, defineConfig } from "vitepress";
+import { sidebar } from "./sidebarConfig";
+import { getContributors } from "./theme/util";
 
-const navConfig: DefaultTheme.NavItem[] = [{ text: "主页", link: "/" }];
-
-const sidebarConfig: DefaultTheme.SidebarItem[] = [
-  {
-    text: "快速开始",
-    items: [
-      { text: "注意", link: "/get-start/index.md" },
-      { text: "速通", link: "/get-start/quick.md" },
-    ],
-  },
-  {
-    text: "例子",
-    items: [
-      { text: "模组翻译", link: "/example/translation.md" },
-      { text: "建筑相关", link: "/example/buildings.md" },
-    ],
-  },
-  {
-    text: "源码注释",
-    items: [{ text: "精炼机", link: "/source-code/metal-refinery-config" }],
-  },
-];
 
 const socialLinks: DefaultTheme.SocialLink[] = [
   { icon: "github", link: "https://github.com/ONIMEG/guide/" },
 ];
 
 export default defineConfig({
-  title: "Guide",
-  description: "缺氧模组制作入门指北",
+  title: "缺氧模组制作入门指南",
+  description: "缺氧模组制作入门指南",
   lastUpdated: true,
   head: [["link", { rel: "icon", href: "/logo.png" }]],
-
+  async transformPageData(pageData, ctx) {
+      pageData.frontmatter.contributer = await getContributors(pageData.relativePath)
+  },
   themeConfig: {
     outline: { label: "目录" },
     search: {
@@ -48,8 +30,7 @@ export default defineConfig({
     },
     lastUpdatedText: "最后更新于",
     logo: "/logo.png",
-    nav: navConfig,
-    sidebar: sidebarConfig,
+    sidebar: sidebar,
     socialLinks: socialLinks,
   },
 });

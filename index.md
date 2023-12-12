@@ -1,10 +1,9 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
   name: "缺氧模组制作"
-  text: "入门指北"
+  text: "入门指南"
   tagline: 做模组，不求人
   image:
     src: /logo.png
@@ -12,14 +11,10 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /get-start/index.md
+      link: /0/0_1_target
 
-features:
-  - icon: "?"
-    title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+# features:
+#   - icon: "😁"
+#     title: 开源
+#     details: 
 ---
