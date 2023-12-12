@@ -5,6 +5,7 @@ export const getContributors = async (filePaths) => {
         cwd: dirname(filePaths),
         stdin: 'inherit',
     });
+    console.log(stdout,filePaths)
     return stdout
         .split('\n')
         .map((item) => item.trim().match(/^(\d+)\t(.*) <(.*)>$/))
