@@ -5,6 +5,7 @@ import { getContributors } from "./theme/util";
 
 const socialLinks: DefaultTheme.SocialLink[] = [
   { icon: "github", link: "https://github.com/ONIMEG/guide/" },
+  { icon: "github", link: "https://github.com/ONIMEG/guide/" },
 ];
 
 export default defineConfig({
@@ -22,6 +23,7 @@ export default defineConfig({
     },
     editLink: {
       pattern: "https://github.com/ONIMEG/guide/edit/main/:path",
+      text: "在 GitHub 上编辑本页",
       text: "在 GitHub 上编辑本页",
     },
     docFooter: {

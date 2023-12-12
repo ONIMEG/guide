@@ -636,6 +636,8 @@ packages:
 
   /ansi-sequence-parser@1.1.1:
     resolution: {integrity: sha512-vJXt3yiaUL4UU546s3rPXlsry/RnM730G1+HkpKE012AN0sx1eOrxSu95oKDIonskeLTijMgqWZ3uDEe3NFvyg==}
+  /ansi-sequence-parser@1.1.1:
+    resolution: {integrity: sha512-vJXt3yiaUL4UU546s3rPXlsry/RnM730G1+HkpKE012AN0sx1eOrxSu95oKDIonskeLTijMgqWZ3uDEe3NFvyg==}
     dev: true
 
   /cross-spawn@7.0.3:
@@ -921,6 +923,7 @@ packages:
       '@types/node': '>= 14'
       less: '*'
       lightningcss: ^1.21.0
+      lightningcss: ^1.21.0
       sass: '*'
       stylus: '*'
       sugarss: '*'
@@ -929,6 +932,8 @@ packages:
       '@types/node':
         optional: true
       less:
+        optional: true
+      lightningcss:
         optional: true
       lightningcss:
         optional: true
@@ -985,6 +990,7 @@ packages:
       - idb-keyval
       - jwt-decode
       - less
+      - lightningcss
       - lightningcss
       - nprogress
       - qrcode
