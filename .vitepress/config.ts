@@ -4,8 +4,7 @@ import { getContributors } from "./theme/util";
 
 
 const socialLinks: DefaultTheme.SocialLink[] = [
-  { icon: "github", link: "https://github.com/ONIMEG/guide/" },
-  { icon: "github", link: "https://github.com/ONIMEG/guide/" },
+  { icon: "github", link: "https://github.com/ONIMEG/" },
 ];
 
 export default defineConfig({
@@ -14,7 +13,7 @@ export default defineConfig({
   lastUpdated: true,
   head: [["link", { rel: "icon", href: "/logo.png" }]],
   async transformPageData(pageData, ctx) {
-      pageData.frontmatter.contributer = await getContributors(pageData.relativePath)
+    pageData.frontmatter.contributer = await getContributors(pageData.relativePath)
   },
   themeConfig: {
     outline: { label: "目录" },
@@ -22,8 +21,7 @@ export default defineConfig({
       provider: "local",
     },
     editLink: {
-      pattern: "https://github.com/ONIMEG/guide/edit/main/:path",
-      text: "在 GitHub 上编辑本页",
+      pattern: "https://github.com/ONIMEG/oni-mod-tools/start-doc/edit/main/:path",
       text: "在 GitHub 上编辑本页",
     },
     docFooter: {

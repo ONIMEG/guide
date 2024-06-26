@@ -1,11 +1,10 @@
 import { execa } from 'execa';
-import {dirname} from 'path'
 export const getContributors = async (filePaths) => {
-    const { stdout } = await execa('git', ['--no-pager', 'shortlog', '-nes', 'HEAD', '--', filePaths], {
-        cwd: dirname(filePaths),
+    const result = await execa('git', ['--no-pager', 'shortlog', '-nes', 'HEAD', '--', filePaths], {
+
         stdin: 'inherit',
     });
-    console.log(stdout,filePaths)
+    const {stdout} = result;
     return stdout
         .split('\n')
         .map((item) => item.trim().match(/^(\d+)\t(.*) <(.*)>$/))

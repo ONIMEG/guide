@@ -22,7 +22,7 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
     ],
   },
   {
-    text: "第 2 章 开始一个项目",
+    text: "第 2 章 模组制作流程",
     collapsed: true,
     items: [
       {text: "2.1 游戏文件", link: "/2/2_1_rela_files.md"},
@@ -30,4 +30,14 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
       {text: "2.3 项目生成、测试以及上传", link: "/2/2_3_budle.md"}
     ]
   },
+  {
+    text: "第 3 章 简单的模组案例",
+    collapsed: true,
+    items: [
+      {text: "3.1 新增一个建筑", link: "/3/3_1_new_building.md"},
+      {text: "3.2 对现有建筑进行修改", link: "/3/3_2_modify_buildings.md"},
+      {text: "3.3 修改详情菜单", link: "/3/3_3_modify_detail_menu.md"},
+      {text: "3.4 模组多语言设置", link: '/3/3_4_mod_il8n.md'}
+    ]
+  }
 ];

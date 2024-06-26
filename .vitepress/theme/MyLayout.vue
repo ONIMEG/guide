@@ -2,17 +2,39 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme'
 import {useData} from 'vitepress'
+import {computed} from 'vue'
 
-const {frontmatter} = useData();
 const { Layout } = DefaultTheme
-const contributer = frontmatter.contributer
-
+const {frontmatter} = useData();
+const pageInfo = computed(() => {
+  const result = {
+  };
+  for (const key in frontmatter.value) {
+    result[key] = frontmatter.value[key];
+  }
+  
+  return result;
+});
 </script>
 
 <template>
   <Layout>
     <template #doc-footer-before>
-      本文贡献者: <template v-for="item in contributer">{{ item }}</template>
+      <div class="contributer">
+        页面贡献者: <span v-for="item in pageInfo.contributer" class="item">{{ item.name }}</span>
+      </div> 
     </template>
   </Layout>
 </template>
+
+<style scoped>
+.contributer{
+  line-height: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--vp-c-text-2);
+}
+.item+.item::before{
+  content: '、';
+}
+</style>
